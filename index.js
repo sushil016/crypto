@@ -7,6 +7,12 @@ const option3 = '26'
 const option4 = '29'
 
 
+
+const problem_2 = 'can you solve the integration of root tanx'
+const op1 = 'yes'
+const op2 = 'no'
+
+
 function encryption(text ,key ,iv){
     const algo = 'aes-256-cbc'
 
@@ -34,6 +40,12 @@ const encryptedsol1 = encryption(option1,key,iv);
 const encryptedsol2 = encryption(option2,key,iv);
 const encryptedsol3 = encryption(option3,key,iv);
 const encryptedsol4 = encryption(option4,key,iv);
+
+const encrytionp2 = encryption(problem_2,key,iv)
+console.log('p2',encrytionp2)
+
+const decryption2 = deCryption(encrytionp2,key ,iv);
+console.log('decryption of the problem statement is', decryption2);
 
 console.log('encrypted problem statement',encryptedProblem);
 console.log('encrypted problem solution1',encryptedsol1);
